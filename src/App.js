@@ -1,11 +1,12 @@
-
 import './App.css';
-
+import Body from './component/Body';
+import Head from './component/Head';
 function App() {
   return (
-    <div className="App">
-     <h2>hello react we build youtube</h2>
-    </div>
+    <>
+    <Head/>
+    <Body/>
+    </>
   );
 }
 
