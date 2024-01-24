@@ -7,7 +7,7 @@ const Videocard = ({data}) => {
     const {snippet,statistics}=data || {};
     const {channelTitle,title,thumbnails}=snippet  || {};
   return (
-    <div className='flex flex-wrap sm:flex sm:flex-row '>   
+    <div className='flex flex-wrap  '>   
        {
      data && data.map((item)=>(
       <NavLink to={"/watchpage?v="+item.id}>
