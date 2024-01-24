@@ -12,6 +12,7 @@ const Buttonlist = () => {
       <Button name="Movies"/>
       <Button name="news"/>
       <Button name="Cooking"/>
+      <Button name="Cooking"/>
     </div>
   )
 }

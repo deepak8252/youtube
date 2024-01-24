@@ -4,8 +4,8 @@ import { ViewAgendaOutlined } from '@mui/icons-material';
 import { NavLink } from 'react-router-dom';
 const Videocard = ({data}) => {
     console.log(data);
-    const {snippet,statistics}=data || {};
-    const {channelTitle,title,thumbnails}=snippet  || {};
+    const {snippet,}=data || {};
+    const {title}=snippet  || {};
   return (
     <div className='flex flex-wrap  '>   
        {
