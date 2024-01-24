@@ -13,8 +13,8 @@ const Videocontainer = () => {
  setvideo(result.items);
   }
   return (
-    <div>
-      <Videocard data={video[0]}/>
+    <div className='flex flex-wrap'>
+      <Videocard data={video}/>
     </div>
   )
 }

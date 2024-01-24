@@ -5,6 +5,7 @@ import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import {  ChangeCircleRounded, History, MovieSharp, MusicNote, ShowerSharp, Sports, VideoCameraFront, WatchLater } from '@mui/icons-material';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 const Sidebar = () => {
   const ismenuopen=useSelector(store=>store.app.isMenuOpen);
   if(!ismenuopen){
@@ -13,7 +14,9 @@ const Sidebar = () => {
   return (
     <div className=' shadow-lg w-48 '>
       <ul className='flex flex-col justify-between p-3 cursor-pointer'>
-        <li className='p-1 px-2'><HomeIcon className='text-gray-400 mx-2 '/> Home</li>
+        <li className='p-1 px-2'>
+          <Link to='/'> <HomeIcon className='text-gray-400 mx-2 '/>  Home</Link>
+          </li>
         <li className='p-1 px-2'> <AppShortcutIcon className='text-gray-400 mx-2'/>shorts</li>
         <li className='p-1 px-2'><SubscriptionsIcon className='text-gray-400 mx-2 '/>subscription</li>
       </ul>
